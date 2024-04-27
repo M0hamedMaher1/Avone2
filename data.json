@@ -1,0 +1,39 @@
+{
+    "products": [
+        {   
+            "id": 1,
+            "name": "analog wall clock",
+            "image": "https://avon-demo.myshopify.com/cdn/shop/products/Analog-Wall-Clock-NEW1_550x.jpg?v=1612865789",
+            "price": 150.00,
+            "disc": "$250.00"
+        },
+        {   
+            "id": 2,
+            "name": "classic vase",
+            "image": "https://avon-demo.myshopify.com/cdn/shop/products/vase-NEW_350x.jpg?v=1543315350",
+            "price": 120.00,
+            "disc": ""
+        },
+        {   
+            "id": 3,
+            "name": "casual dining chairs 1",
+            "image": "https://avon-demo.myshopify.com/cdn/shop/products/Casual-Dining-Chairs-NEW_350x.jpg?v=1543315516",
+            "price": 270.00,
+            "disc": ""
+        },
+        {   
+            "id": 4,
+            "name": "round design wall clock",
+            "image": "https://avon-demo.myshopify.com/cdn/shop/products/Round-Design-Wall-Clock-NEW-1_350x.jpg?v=1543315262",
+            "price": 150.00,
+            "disc": ""
+        },
+        {   
+            "id": 5,
+            "name": "kids green chair",
+            "image": "https://avon-demo.myshopify.com/cdn/shop/products/kids-chair-NEW_350x.jpg?v=1548308216",
+            "price": 210.00,
+            "disc": ""
+        }
+    ]
+}

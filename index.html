@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS File -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="container">
+                <div class="nav-row">
+                    <div class="leftt">
+                        <i class="fa-solid fa-bars" id="bar"></i>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="./imgs/logo_90x.webp" alt="">
+                        </a>
+                    </div>
+                    <div class="mainUl">
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">shop</a></li>
+                        <li><a href="#">features</a></li>
+                        <li><a href="#">lookbook</a>
+                            <ul class="dropDown">
+                                <li><a href="#">2 Columns</a></li>
+                                <li><a href="#">3 Columns</a></li>
+                                <li><a href="#">4 Columns</a></li>
+                                <li><a href="#">5 Columns + Fullwidth</a></li>
+                                <li><a href="#">Lookbook Shop</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">pages</a>
+                            <ul class="dropDown">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">FAQs</a></li>
+                                <li><a href="#">Landing Page</a></li>
+                                <li><a href="#">CMS</a></li>
+                                <li><a href="#">404</a></li>
+                                <li><a href="#">Coming Soon</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">blog</a>
+                            <ul class="dropDown">
+                                <li><a href="#">Left Sidebar</a></li>
+                                <li><a href="#">Right Sidebar</a></li>
+                                <li><a href="#">Fullwidth</a></li>
+                                <li><a href="#">2 Columns</a></li>
+                                <li><a href="#">3 Columns</a></li>
+                                <li><a href="#">4 Columns</a></li>
+                                <li><a href="#">Single Post</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">buy now!</a></li>
+                    </div>
+                    <div class="right-icons">
+                        <i class="fa-solid fa-magnifying-glass none" id="search"></i>
+                        <i class="fa-regular fa-user"></i>
+                        <i class="fa-regular fa-heart none"></i>
+                        <i class="fa-solid fa-bag-shopping" id="basket"><span>0</span></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="overlay1">
+            <div class="searchBar">
+                <i class="fa-solid fa-xmark close"></i>
+                <div class="container">
+                    <label>What are you looking for?</label>
+                    <div class="bot-input">
+                        <input type="text" onkeyup="searchProduct(this.value)" placeholder="Search for products, brands and more">
+                        <div class="search2">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="last">
+            <div class="container">
+                <div class="nav-row">
+                    <div class="leftt">
+                        <i class="fa-solid fa-bars" id="bar"></i>
+                        <i id="search" class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="./imgs/logo_90x.webp" alt="">
+                        </a>
+                    </div>
+                    <div class="mainUl">
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">shop</a></li>
+                        <li><a href="#">features</a></li>
+                        <li><a href="#">lookbook</a>
+                            <ul class="dropDown">
+                                <li><a href="#">2 Columns</a></li>
+                                <li><a href="#">3 Columns</a></li>
+                                <li><a href="#">4 Columns</a></li>
+                                <li><a href="#">5 Columns + Fullwidth</a></li>
+                                <li><a href="#">Lookbook Shop</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">pages</a>
+                            <ul class="dropDown">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">FAQs</a></li>
+                                <li><a href="#">Landing Page</a></li>
+                                <li><a href="#">CMS</a></li>
+                                <li><a href="#">404</a></li>
+                                <li><a href="#">Coming Soon</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">blog</a>
+                            <ul class="dropDown">
+                                <li><a href="#">Left Sidebar</a></li>
+                                <li><a href="#">Right Sidebar</a></li>
+                                <li><a href="#">Fullwidth</a></li>
+                                <li><a href="#">2 Columns</a></li>
+                                <li><a href="#">3 Columns</a></li>
+                                <li><a href="#">4 Columns</a></li>
+                                <li><a href="#">Single Post</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">buy now!</a></li>
+                    </div>
+                    <div class="right-icons">
+                        <i class="fa-solid fa-magnifying-glass none" id="search"></i>
+                        <i class="fa-regular fa-user"></i>
+                        <i class="fa-regular fa-heart none"></i>
+                        <i class="fa-solid fa-bag-shopping" id="basket"><span>0</span></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="up">
+            <div class="container">
+                <div class="up-row">
+                    <h4>SHOP DEALS OF THE WEEK - UP TO 70% OFF</h4>
+                    <h4 class="none2">FREE WORLDWIDE SHIPPING ON ALL ORDERSABOVE $100</h4>
+                    <h4>EXTENDED RETURN UNTIL 10TH NOVEMBER</h4>
+                </div>
+            </div>
+        </div>
+        <div class="over">
+            <aside class="cart">
+                <div class="top">
+                    <h3>Your Cart</h3>
+                    <i class="fa-solid fa-xmark close3"></i>
+                </div>
+                <div class="sec">
+                    <h4>
+                        <i class="fa-solid fa-truck"></i> congrantulations! <span>you have got</span> free shipping
+                    </h4>
+                </div>
+                <div class="empty">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    <h4>You don't have any items in your cart.</h4>
+                    <button>continue shopping</button>
+                </div>
+                <div class="choosen">
+
+                </div>
+                <div class="lasted">
+                    <div class="top-Thing">
+                        <div class="ones">
+                            <i class="fa-regular fa-file-lines"></i>
+                        </div>
+                        <div class="ones">
+                            <i class="fa-solid fa-thumbtack"></i>
+                        </div>
+                        <div class="ones">
+                            <i class="fa-solid fa-gift"></i>
+                        </div>
+                    </div>
+                    <div class="total">
+                        <h3>subtotal</h3>
+                        <h4>$<span>540.00</span> USD</h4>
+                    </div>
+                    <p>Tax included and shipping calculated at checkout</p>
+                    <div class="checks">
+                        <input type="checkbox" id="check">
+                        <label for="check">I agree with the terms and conditions</label>
+                    </div>
+                    <div class="twoButtons">
+                        <button>proceed to checkout</button>
+                        <button>view cart</button>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <div class="over2">
+            <aside class="aside1">
+            <div class="closeAside">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">shop</a></li>
+                <li><a href="#">features</a></li>
+                <li><a href="#">lookbook</a></li>
+                <li><a href="#">pages</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">buy now!</a></li>
+                <li><a href="#">login</a></li>
+                <li><a href="#">register now</a></li>
+                <li><a href="#">wishlist</a></li>
+            </ul>
+        </aside>
+        </div>
+        <div class="upper">
+            <i class="fa-solid fa-arrow-up"></i>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h5>Made with perfection</h5>
+                    <h2>minimal wall clock</h2>
+                    <h4>Furnishing your home exactly how you imagined it.</h4>
+                    <button>shop now</button>
+                </div>
+            </div>
+        </section>
+        <section class="products">
+            <div class="container">
+                <div class="title">
+                    <h3>HANDPICKED ITEMS</h3>
+                    <p>Describe your products, collection etc...</p>
+                </div>
+                <div class="products-row">
+                </div>
+            </div>
+            <div class="overlay2">
+                <div class="container2">
+                    <div class="over-row">
+                        <div class="close2">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <div class="left-image">
+                            <img src="" alt="">
+                        </div>
+                        <div class="right-info">
+                            <a href="#">Balenciaga</a>
+                            <h2></h2>
+                            <span>In Stock</span>
+                            <h3 class="price2">$<span></span></h3>
+                            <p>
+                                Avon is a ultimate multipurpose shopify theme. It is a beautiful, highly customizable
+                                and super fast theme with functionality to increase conversions. Avon will give you and
+                                your customers a...
+                            </p>
+                            <div class="bot-payment">
+                                <div class="left-counts">
+                                    <button class="minus">
+                                        -
+                                    </button>
+                                    <input type="text" value="1">
+                                    <button class="plus">
+                                        +
+                                    </button>
+                                </div>
+                                <button class="addToCart">
+                                    add to cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="products2">
+            <div class="container">
+                <div class="title">
+                    <h3>POPULAR ITEMS</h3>
+                    <p>Describe your products, collection etc...</p>
+                </div>
+                <div class="products2-row">
+                    <div class="card3">
+                        <div class="image2">
+                            <div class="top-sale">
+                                <span class="sale">sale</span>
+                                <span class="new">new</span>
+                            </div>
+                            <img src="./imgs/zahrya1.webp" alt="">
+                            <img src="./imgs/zahrya2.webp" alt="" class="img2">
+                            <div class="four-clocks">
+                                <div class="clock">
+                                    <h5>162</h5>
+                                    <p>days</p>
+                                </div>
+                                <div class="clock">
+                                    <h5>21</h5>
+                                    <p>hour</p>
+                                </div>
+                                <div class="clock">
+                                    <h5>24</h5>
+                                    <p>mins</p>
+                                </div>
+                                <div class="clock">
+                                    <h5>12</h5>
+                                    <p>sec</p>
+                                </div>
+                            </div>
+                            <div class="icons">
+                                <div class="icon1"><i class="fa-regular fa-heart"></i></div>
+                                <div class="icon2"><i class="fa-solid fa-cart-shopping"></i></div>
+                                <div class="icon3"><i class="fa-brands fa-searchengin"></i></div>
+                            </div>
+                        </div>
+                        <div class="card-body2">
+                            <h4>black flower vase</h4>
+                            <div class="discount">
+                                <span class="disc2">
+                                    $100.00
+                                </span>
+                                <span>
+                                    $70.00
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card3">
+                        <div class="image2">
+                            <img src="./imgs/chair1.webp" alt="">
+                            <img src="./imgs/chair2.webp" alt="" class="img2">
+                            <div class="icons">
+                                <div class="icon1"><i class="fa-regular fa-heart"></i></div>
+                                <div class="icon2"><i class="fa-solid fa-cart-shopping"></i></div>
+                                <div class="icon3"><i class="fa-brands fa-searchengin"></i></div>
+                            </div>
+                        </div>
+                        <div class="card-body2">
+                            <h4>wooden baby chair</h4>
+                            <div class="discount">
+                                <span>
+                                    $200.00
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card3">
+                        <div class="image2">
+                            <img src="./imgs/zahrya3.webp" alt="">
+                            <img src="./imgs/zahrya4.webp" alt="" class="img2">
+                            <div class="icons">
+                                <div class="icon1"><i class="fa-regular fa-heart"></i></div>
+                                <div class="icon2"><i class="fa-solid fa-cart-shopping"></i></div>
+                                <div class="icon3"><i class="fa-brands fa-searchengin"></i></div>
+                            </div>
+                        </div>
+                        <div class="card-body2">
+                            <h4>white ceramic plant flower</h4>
+                            <div class="discount">
+                                <span>
+                                    $30.00
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="info">
+            <div class="container3">
+                <div class="info-hero">
+                    <h2>TESTIMONIAL</h2>
+                    <h3>Incredible UI/UX</h3>
+                    <p>
+                        This theme is absolutely amazing and super easy to use. this was my first time using shopify and
+                        setting up is theme was a breeze.The support team is even more amazing, they are always here to
+                        help and fix any issues and answer any questions.
+                    </p>
+                    <h4>great theme great team</h4>
+                    <div class="stars">
+                        <div class="star"><i class="fa-solid fa-star"></i></div>
+                        <div class="star"><i class="fa-solid fa-star"></i></div>
+                        <div class="star"><i class="fa-solid fa-star"></i></div>
+                        <div class="star"><i class="fa-solid fa-star"></i></div>
+                        <div class="star"><i class="fa-solid fa-star"></i></div>
+                    </div>
+                    <h5>mohamedteam</h5>
+                </div>
+            </div>
+        </section>
+        <section class="images">
+            <div class="container">
+                <div class="images-row">
+                    <div class="image3">
+                        <img src="./imgs/1_7dece75f-a083-4638-9a4b-b3a3016f3371_700x.webp" alt="">
+                    </div>
+                    <div class="image3">
+                        <img src="./imgs/2_97e8dee7-0a25-4357-a87b-2966868a737d_700x.webp" alt="">
+                    </div>
+                </div>
+                <div class="news">
+                    <h2>NEW FOR FALL + SALE</h2>
+                    <p>Your home should be a story of who you are, and be a collection of what you love. A table, a
+                        chair, a bowl of fruit and a violin; what else does a man need to be happy?</p>
+                    <button>view lookbook</button>
+                </div>
+            </div>
+        </section>
+        <section class="lastSection">
+            <h3>
+                A SALE THAT IS BETTER THAN FIREWORKS. FALL SALE up to 70% off ! HURRY UP!
+            </h3>
+        </section>
+    </main>
+    <footer>
+        <div class="foot">
+            <div class="container">
+                <div class="foot-row">
+                    <div class="one1">
+                        <h3 class="title2">
+                            INFORMATION <i class="fa-solid fa-angle-down"></i>
+                        </h3>
+                        <div class="bot">
+                            <ul>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Career</a></li>
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Orders and Returns</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="one1">
+                        <h3 class="title2">
+                            QUICK SHOP <i class="fa-solid fa-angle-down"></i>
+                        </h3>
+                        <div class="bot">          
+                            <ul>
+                                <li><a href="#">Fashion</a></li>
+                                <li><a href="#">Men</a></li>
+                                <li><a href="#">Furniture</a></li>
+                                <li><a href="#">Home Decor</a></li>
+                                <li><a href="#">Shoes</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="one1">
+                        <h3 class="title2">
+                            CUSTOMER SERVICES <i class="fa-solid fa-angle-down"></i>
+                        </h3>
+                        <div class="bot">
+                            <ul>
+                                <li><a href="#">Help & FAQs</a></li>
+                                <li><a href="#">Returns Policy</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Support Center</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                     <div class="one1">
+                        <h3 class="title2">
+                            STAY CONNECTED <i class="fa-solid fa-angle-down"></i>
+                        </h3>
+                        <div class="bot bot2">
+                            <ul>
+                                <li><a href="#" class="face">Facebook</a></li>
+                                <li><a href="#" class="twit">Twitter</a></li>
+                                <li><a href="#" class="pint">Pinterest</a></li>
+                                <li><a href="#" class="insta">Instagram</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="end">
+            <h4>© 2024 Avone. All Rights Reserved.</h4>
+        </div>
+        <div class="apps">
+            <div class="apps-row">
+                <div class="app">
+                    <i class="fa-solid fa-house"></i>
+                    <h3>home</h3>
+                </div>
+                <div class="app" id="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <h3>search</h3>
+                </div>
+                <div class="app">
+                    <i class="fa-regular fa-user"></i>
+                    <h3>account</h3>
+                </div>
+                <div class="app">
+                    <i class="fa-regular fa-heart"></i>
+                    <h3>wishlist</h3>
+                </div>
+                <div class="app" id="basket">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <h3>cart</h3>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- JS -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
